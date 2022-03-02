@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import smallImg from './small.png';
-import largeImg from './large.png';
+//import logo from './logo.svg';
+//import './App.css';
+import React, { Component } from "react";
+import Button from "./button2";
+import Box from "./Box1";
 
-function App() {
+/*function App() {
   return (
     <div className="App">
+      <TodoList />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -24,6 +26,17 @@ function App() {
       <img srsc={smallImg} />
     </div>
   );
+}*/
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Button size="big" />
+        <Button size="small" />
+        <Box size="big" />
+        <Box size="small" />
+      </div>
+    )
+  }
 }
-
 export default App;
