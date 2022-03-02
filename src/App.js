@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import smallImg from './small.png';
+import largeImg from './large.png';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <img src={largeImg} />
+      <img srsc={smallImg} />
     </div>
   );
 }
